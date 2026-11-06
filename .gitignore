@@ -1,18 +1,7 @@
-# Кэш Python
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Технические файлы Jupyter
-.ipynb_checkpoints/
-*/.ipynb_checkpoints/
-*.ipynb
-
-# Локальные папки с данными, отчетами и логами (по ТЗ)
+# Скрываем только папки с данными, кэшем и отчетами
 data/
 reports/
 logs/
-
-# Двойные файлы-ошибки Windows
-*.txt.txt
-*.py.txt
+__pycache__/
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
