@@ -1,0 +1,7 @@
+2026-11-06 18:40:40,709 - ERROR - Ошибка при обработке файла corrupted_orders.csv: Отсутствует обязательная колонка: 'status'
+2026-11-06 19:15:30,277 - ERROR - Ошибка при обработке файла corrupted_orders.csv: Отсутствует обязательная колонка: 'status'
+2026-11-06 19:15:33,387 - ERROR - Ошибка при обработке файла corrupted_orders.csv: Отсутствует обязательная колонка: 'status'
+2026-11-06 19:16:19,289 - ERROR - Ошибка при обработке файла corrupted_orders.csv: Отсутствует обязательная колонка: 'status'
+2026-11-07 09:50:13,064 - ERROR - Ошибка при обработке файла corrupted_orders.csv: Отсутствует обязательная колонка: 'status'
+2026-11-07 09:57:42,986 - ERROR - Ошибка при обработке файла corrupted_orders.csv: Unable to parse string 'пропущен' at position 1
+2026-11-07 10:01:46,710 - ERROR - Ошибка при обработке файла corrupted_orders.csv: Unable to parse string 'пропущен' at position 1

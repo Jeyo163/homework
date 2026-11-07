@@ -2,7 +2,7 @@ import os
 import glob
 import logging
 import pandas as pd
-import src.config as config
+import config as config
 
 class OrderAnalyzer:
         def __init__(self):
@@ -35,7 +35,9 @@ class OrderAnalyzer:
                         raise ValueError(f"Отсутствует обязательная колонка: '{col}'")
 
                 #Проверка 3: Устойчивость на неверные значения в total_amount
-                df[config.AMOUNT_COLUMN] = pd.to_numeric(df[config.AMOUNT_COLUMN], errors='coerce')
+                df[config.AMOUNT_COLUMN] = pd.to_numeric(df[config.AMOUNT_COLUMN], errors='raise')
+                if df[config.AMOUNT_COLUMN].isnull().any():
+                    raise ValueError("Колонка стоимости содержит пустые или null значения")
 
                 #Фильтруем: оставляем только заказы со статусом 'Delivered'
                 filtred_df = df[df[config.STATUS_COLUMN] == config.STATUS_TARGET]

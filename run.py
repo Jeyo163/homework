@@ -1,9 +1,10 @@
 import os
 import sys
+import config
 
-#Добавляем директорию в путь поиска модулей, чтобы питон находил наш пакет Src
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(BASE_DIR)
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from src.analyzer import OrderAnalyzer
 
 def main():

@@ -1,0 +1,4 @@
+order_id,status,total_amount,customer_id
+999,Delivered,null,12
+1000,Delivered,пропущен,15
+1001,Delivered,500.00,16
